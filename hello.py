@@ -24,3 +24,6 @@ else:
                 else:
                     print("lo sentimos, has perdido")
 print("EJERCICIO DE PROGRAMACION MUY FACIL, ESTRUCTURA DE CONTROL IF ELSE")
+
+
+

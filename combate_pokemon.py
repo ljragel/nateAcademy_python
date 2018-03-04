@@ -1,41 +1,43 @@
-charmander_health=100
-charmander_attacks=("BOLAFUEGO", "SOFOCO")
+pokemon_elegido = input("¿Contra qué Pokemon quieres combatir? (Squirtle / Charmander / Bulbasaur): ")
 
-squirtle_health=120
-squirtle_attacks=("HIDROBOMBA","SALPICADURA")
+vida_pikachu = 100
+vida_enemigo = 0
+ataque_pokemon = 0
 
-bulvasur_helath=80
-bulvasur_attacks=("LATIGOCEPA", "HOJAAFILADA")
+if pokemon_elegido == "Squirtle":
+    vida_enemigo = 90
+    nombre_pokemon = "Squirtle"
+    ataque_pokemon = 8
 
-pikachu_health=100
-pikachu_attacks=("COLAFERREA", "TRUENO")
+elif pokemon_elegido == "Charmander":
+    vida_enemigo = 80
+    nombre_pokemon = "Charmander"
+    ataque_pokemon = 7
 
-your_health=-1
-your_attacks=()
+elif pokemon_elegido == "Bulbasaur":
+    vida_enemigo = 100
+    nombre_pokemon = "Bulbasaur"
+    ataque_pokemon = 10
 
-aux_pokemon_name=""
-your_pokemon="PIKACHU"
+while vida_pikachu > 0 and vida_enemigo > 0:
+    ataque_elegido = input("¿Qué ataque vamos a usar? (Chispazo / Bola voltio)")
 
-while your_pokemon=="PIKACHU" and aux_pokemon_name!="":
-    your_pokemon = str(input("Introduce el nombre el pokemon(Charmander/Squirtle/Bulvasur)."))
-    if (your_pokemon != "CHARMANDER" and your_pokemon != "SQUIRTLE" and your_pokemon != "BULVASUR"):
-        print("No tenemos a ningun pokemon con ese nombre, lo siento, introduce un nombre valido: ")
+    if ataque_elegido == "Chispazo":
+        vida_enemigo -= 10
+    elif ataque_elegido == "Bola voltio":
+        vida_enemigo -= 12
 
+    print("La vida del {} ahora es de {}".format(nombre_pokemon, vida_enemigo))
 
+    print("{} te hace un ataque de {} de daño".format(nombre_pokemon, ataque_pokemon))
+    vida_pikachu -= ataque_pokemon
 
+    print("La vida de Pikachu es de {}".format(vida_pikachu))
 
+if vida_enemigo <= 0:
+    print("¡Has ganado!")
 
+if vida_pikachu <= 0:
+    print("¡Has perdido!")
 
-if enemy_name=="CHARMANDER":
-
-    print("Tu: CHARMANDER  te elijo a ti")
-    enemy_health=charmander_health
-    your_attacks = charmander_attacks
-elif enemy_name=="BULVASUR":
-    print("Tu: BULVASUR te elijo a ti")
-    enemy_health=charmander_health
-    your_attacks_attacks=bulvasur_attacks
-elif enemy_name=="SQUIRTLE":
-    print("Tu: SQUIRTLE te elijo a ti")
-    enemy_health=charmander_health
-    your_attacks=squirtle_attacks
+print("El combate ha terminado")
