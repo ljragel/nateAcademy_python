@@ -3,14 +3,16 @@
 
 >for  in lista:   Esta es la sintaxis del for each en python,"para cada item en la lista haz:"
 
-if
+if              sintaxis de la estructura "if-else" en python
 elif
 else
 
 
-print()
+print()         impirme con salto de linea incluido
 
 
 >>len() Dice la longitud de una lista en python
 
 >>__len__()             nose la diferencia que hay la verdad
+
+>>replace("a", "e")             sustituye el primer parametro de una strign
