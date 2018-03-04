@@ -13,3 +13,4 @@ print()
 
 >>len() Dice la longitud de una lista en python
 
+>>__len__()             nose la diferencia que hay la verdad
