@@ -2,6 +2,7 @@
 frase_usuario=input("Introduce la frase que te salga de las narices: ")
 vocales=["a", "e", "i", "o", "u"]
 vocales_mayusculas=["A", "E", "I", "O", "U"]
+vocales_en_el_texto=[]
 
 numero_mayusculas=0
 numero_vocales=0
@@ -13,8 +14,10 @@ numero_puntos=0
 for letra in frase_usuario:
     if (letra in vocales):
         numero_vocales+=1
+        vocales_en_el_texto.append(letra)
     elif (letra in vocales_mayusculas):
         numero_mayusculas+=1
+        vocales_en_el_texto.append(letra)
     elif letra==" ":
         numero_espacios+=1
     elif letra==",":
@@ -27,6 +30,11 @@ for letra in frase_usuario:
         numero_mayusculas+=1
         numero_consonantes+=1
 
+print("Vocales: ")
+print(vocales_en_el_texto)
+
+print("")
+print("")
 
 print("El numero de vocales es {}".format(numero_vocales))
 print("El numero de consonantes es {}".format(numero_consonantes))

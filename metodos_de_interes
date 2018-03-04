@@ -1,0 +1,15 @@
+>>range(x,y) te crea una lista del numero inicial indicado al numero final indicado
+>> .format(loquesea) introduce lo que sea dentro de un string
+
+>for  in lista:   Esta es la sintaxis del for each en python,"para cada item en la lista haz:"
+
+if
+elif
+else
+
+
+print()
+
+
+>>len() Dice la longitud de una lista en python
+
