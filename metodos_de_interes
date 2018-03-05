@@ -16,3 +16,8 @@ print()         impirme con salto de linea incluido
 >>__len__()             nose la diferencia que hay la verdad
 
 >>replace("a", "e")             sustituye el primer parametro de una strign
+
+>>for i in range(10):
+    array[1]=loquesea       ESTO ES EL FOR NORMAL DE JAVA
+
+>> max()            ME DA EL VALOR MAXIMO DE LA LISTA PROPORCIONADA, vale para int's y float's
