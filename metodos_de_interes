@@ -20,4 +20,19 @@ print()         impirme con salto de linea incluido
 >>for i in range(10):
     array[1]=loquesea       ESTO ES EL FOR NORMAL DE JAVA
 
->> max()            ME DA EL VALOR MAXIMO DE LA LISTA PROPORCIONADA, vale para int's y float's
+--> max()            ME DA EL VALOR MAXIMO DE LA LISTA PROPORCIONADA, vale para int's y float's
+
+--> import libreria    SINTAXIS DE UN IMPORT
+
+--> actual_date= datetime.datetime().now()      DICE LA FECHA con sus horas minutos y segundos
+
+
+"30 del 1 de 2018"
+-->objeto_datetime.strfname(%d del %m de %Y) ESTO FORMATEARA LA EL OBJETO PARA IMPRIMIRLO COMO SE MUESTRA ARRIBA
+
+-->en python no hay forma de decir que hay algo es constante por ello, se ponen las variables que lo van a ser en mayuscula
+
+-->en python los atributos y variables de clase se definen poniendo una barrabaja delante, AUNQUE
+a efectos practicos es solo a modo explicativo, pero son igualmente accesibles.
+
+        -->Una si es protected, y dos si es privada
