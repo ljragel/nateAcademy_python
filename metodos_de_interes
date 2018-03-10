@@ -36,3 +36,16 @@ print()         impirme con salto de linea incluido
 a efectos practicos es solo a modo explicativo, pero son igualmente accesibles.
 
         -->Una si es protected, y dos si es privada
+
+==> string.strftime(%d/%m/%Y)
+
+==>random.randInt(a, b)
+
+==> from time import sleep
+
+==> def main()
+
+==>if __name__=="__main__":
+        main()
+
+==> open("nombre_archivo", "w")  //el segundo parametro es la accion a realizar, es decir, añadir, crear archivo, etc.

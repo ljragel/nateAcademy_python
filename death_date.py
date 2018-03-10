@@ -13,7 +13,7 @@ def print_with_underscores(message):
 def ask_yes_or_not(message):
     response=None
 
-    while response != "S" or response != "N":
+    while response != "S" and response != "N":
         response = input(message.upper()+ " [S/N]")
 
     return response=="S"
@@ -36,7 +36,11 @@ if ask_yes_or_not("¿Bebes?"):
     years_lost+= DRINKER_PENALIZATION
 
 if not ask_yes_or_not("¿Haces deporte frecuentemente?"):
-    years_lost-= SEDENTARISM_PENALIZATION
+    years_lost+= SEDENTARISM_PENALIZATION
 
 lifespan= AVERAGE_LIFESPAN- years_lost
-death_date= birth_date-
+death_day= birth_date + datetime.timedelta(days=lifespan*365)
+
+days_to_death= death_day- datetime.datetime.now()
+
+print("Fecha de la muerte {}, te queda {}".format(death_day.strftime("%d/%m/%Y"), days_to_death))
