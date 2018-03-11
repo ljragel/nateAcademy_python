@@ -49,3 +49,5 @@ a efectos practicos es solo a modo explicativo, pero son igualmente accesibles.
         main()
 
 ==> open("nombre_archivo", "w")  //el segundo parametro es la accion a realizar, es decir, añadir, crear archivo, etc.
+
+==>el "null" en python es "None"

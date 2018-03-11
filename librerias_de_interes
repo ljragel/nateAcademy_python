@@ -1,0 +1,6 @@
+==> Plotly, Para hacer graficos de todo tipo de datos(Muy completa y visual)
+==> openCV, Para hacer funciones de reconocimoento de imagenes, etc. Es una libreria pseudo-inteliencia artificial.
+==>matPlot, Es una libreria para hacer graficas de funciones matematicas, sin entrar en las complicaciones de otras "mas visuales".
+==>datetime, Añade y gestiona un nuevo tipod de dato que serán las fehas.
+==>tkinter, Es el swing de pyton , con el que podeos hacer ventanas y UI's de manera sencilla.
+==>numpy, Para realizar acciones complejas con arrays.
