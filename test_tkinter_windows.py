@@ -16,7 +16,7 @@ root = Tk()
 root.title("Pies a metros")
 
 mainframe = ttk.Frame(root, padding="30 12 30 12")
-mainframe.grid()
+mainframe.grid()                                        #establece "como posicionarse" 
 mainframe.columnconfigure(0, weight=1)
 mainframe.rowconfigure(0, weight=1)
 
