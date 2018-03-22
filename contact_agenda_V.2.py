@@ -68,33 +68,34 @@ def remove_contact(contacts):
 
 
 def find_contact(contacts):
-    search_term= input("Introducir el nombre del contacto o perte del mismo.")
-    found_contacts=[]
 
-    print("He encontrado los siguientes contactos: ")
-    contact_indexes= []
-    contact_counter= []
+    print("\n\nBuscar contacto\n")
+    search_term = input("Introducir el nombre del contacto o parte de él: ")
+    found_contacts = []
+
+    print("He encontrado los siguientes contactos:")
+    contact_indexes = []
+    contact_counter = 0
 
     for contact in contacts:
-        if contact["name"].find(search_term)>= 0:
+        if contact["name"].find(search_term) >= 0:
             found_contacts.append(contact)
             print("{} - {}".format(contact_counter, contact["name"]))
             contact_indexes.append(contact_counter)
-            contact_counter +=1
+            contact_counter += 1
 
-    contact_index=0
+    contact_index = 0
 
     if len(contact_indexes) > 1:
-       contact_index= ask_until_option_expected(contact_indexes)
-
-    elif len(contact_indexes)== 0:
-        print("No se ha encontrado ningún contacto que se asemeje a tu búsqueda.")
+        contact_index = ask_until_option_expected(contact_indexes)
+    elif len(contact_indexes) == 0:
+        print("No se ha encontrado ninguno.")
         return
 
     print("\nInformación sobre {}\n".format(found_contacts[contact_index]["name"]))
-    print("Nombre: {name}, Telefono: {phone}, Email: {email}".format(**found_contacts[contact_index]["name"]))
+    print("Nombre: {name}, Telefono: {phone}, Email: {email}\n\n".format(**found_contacts[contact_index]))
+    sleep(2)
 
-    return found_contacts
 
 def export_contact(contacts):
     pass
