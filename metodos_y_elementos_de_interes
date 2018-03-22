@@ -51,3 +51,14 @@ a efectos practicos es solo a modo explicativo, pero son igualmente accesibles.
 ==> open("nombre_archivo", "w")  //el segundo parametro es la accion a realizar, es decir, añadir, crear archivo, etc.
 
 ==>el "null" en python es "None"
+
+==>.find("loquequiereas")    //METODO DE LAS STRINGS QUE ME DEVULEVE -1, SI NO ENCUENTRA NADA DE LO QUE LE PASAMOS Y UN INT(LA POSICION) DE LA CADENAD DE CARACTERES PEDIDA
+
+-------------------------------------------------------------------------------------------------------------
+
+MUY IMPORTANTE, ESTOS METODOS SIRVEN PARA GUARDAR COSAS EN ARCHIVOS FUERA DEL PROGRAMA
+
+==> pickle.load(open('nombreDelArchivo', 'modoLectura'))
+
+==>    with open('nombrearchivo', "wb") as save_file:
+        pickle.dump('loquequieroguardar', save_file)
