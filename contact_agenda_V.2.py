@@ -135,7 +135,7 @@ def main():
         action= show_menu()
 
     save_contacts(contacts)
-    print("Adiós!")
+    print("¡Adiós!")
 
 if __name__=="__main__":
     main()
