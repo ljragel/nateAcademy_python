@@ -133,7 +133,7 @@ def main():
             show_contacts(contacts)
 
         action= show_menu()
-
+ 
     save_contacts(contacts)
     print("¡Adiós!")
 
