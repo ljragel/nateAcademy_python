@@ -41,16 +41,23 @@ def show_menu():
     return ask_until_option_expected(MENU_OPTIONS)
 
 
-def add_contact(contacts):
+def ask_new_contact(contacts):
     print("\n\n Añadir contacto \n")
-    contact = {
-        "name": input("Nombre: "),
-        "phone": input("Teléfono: "),
-        "email": input("Email: ")
-    }
-    contacts.append(contact)
+    add_contact(input("Nombre: "), input("Teléfono: "), input("Email:"))
+
     print("Se ha añadido el contacto {} correctamente \n".format(contact["name"]))
     sleep(2)
+
+
+def add_contact(contacts, name, phone, email):
+    contact={
+        "name": name,
+        "phone": phone,
+        "email": email
+    }
+    contacts.append(contact)
+    return contact
+
 
 
 def remove_contact(contacts):
@@ -119,10 +126,27 @@ def main():
     contacts = load_contacts()
     action = show_menu()
 
-#Interfaz
+#User interface
+
     root= Tk()
-    frame_add_contact= ttk.Frame(root, padding="30 12 30 12")
+    frame_add_contact= ttk.addFrame(root, padding="30 12 30 12")
     frame_add_contact.grid()
+
+    name= StringVar()
+    phone= StringVar()
+    email= StringVar()
+
+    ttk.Label(frame_add_contact, text="Nombre").grid(column=1, row=1)
+    ttk.Label(frame_add_contact, text="Email").grid(column=2, row=1)
+    ttk.Label(frame_add_contact, text="Phone").grid(column=3, row=1)
+
+    name_entry= ttk.Entry(frame_add_contact, width=7, textvariable= name).grid(column=1, row=2)
+    email_entry= ttk.Entry(frame_add_contact, width= 7, textvariable= email).grid(column=2, row=2)
+    phone_entry= ttk.Entry(frame_add_contact, width=7, textvariable= phone).grid(column=3, row=2)
+
+    ttk.Button(frame_add_contact, text="Calucular", command=lambda : k).grid(column=3, row=2, sticky=W)
+
+
 
 
 
