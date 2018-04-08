@@ -1,0 +1,37 @@
+class NombreClase:
+
+    #constuctor de la clase "NombreClase"
+    def__init__(parametro1, parametro2, parametroN):
+        self.parametro1= parametro1
+        self.parametro2= parametro2
+        self.parametroN= parametroN
+
+    #getter de la clase NombreCLase, el cual devuelve el primer parametro de la misma
+    def get_parametro1(self):
+        return self.parametro1
+
+
+    # getter de la clase NombreCLase, el cual devuelve el segundo parametro de la misma
+    def get_parametro2(self):
+        return self.parametro2
+
+    #setter de la clase NombreClase, el cual cambia el valor del parametro1, sustutuyendolo, por uno pasado como parametro.
+    def set_parametro1(new_param1):
+        self.parametro1= new_param1
+
+
+# setter de la clase NombreClase, el cual cambia el valor del parametro2, sustutuyendolo, por uno pasado como parametro.
+    def set_parametro2(new_parametro2):
+        self.parametro2= new_parametro2
+
+
+
+
+
+#instancia de objeto en python, con el nombre del objeto correspondiente, el nombre de la clase , los parametros correspondientes
+#Esta instancia llamara al constructor de la clase.
+    nombreObjeto= NombreClase(param1, param2, paramN)
+
+#llamada a un metodo del objeto "nombreObjeto" de la clase "NombreClase"
+    nombreObjeto.get_parametro1(parametroConcreto)
+
